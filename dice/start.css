@@ -1,0 +1,83 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+div img {
+    width: 100px;
+}
+
+body {
+    background-color: #8b2562;
+}
+
+.container .playerOne {
+    background-color: #dda6b6;
+    opacity: 0.5;
+    height: 50vh;
+}
+
+
+.container .playerTwo {
+    background-color: #63415b;
+    opacity: 0.5;
+    height: 50vh;
+
+
+}
+
+.container p{
+    visibility: hidden;
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    background-color: #a978a5;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+#bg .in{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+#bg .in input#startGame{
+    border: none;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#bg .in button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#bg .in button:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease-in-out;
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+div img {
+    width: 100px;
+}
+
+body {
+    background-color: #8b2562;
+}
+
+.container div {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .playerOne {
+    background-color: #dda6b6;
+    opacity: 0.5;
+}
+
+
+.container .playerTwo {
+    background-color: #63415b;
+    opacity: 0.5;
+
+}
+
+.btweenPlayers {
+    position: absolute;
+    top: 0;
+}
+
+div button {
+    width: 10%;
+    padding: 10px;
+    opacity: 0.5;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+div button:hover{
+    transform: skew(10deg) scale(1.1);
+    transition: transform 1s ease-in-out,transform 1s ease-in-out;
+}
+
+
+
+

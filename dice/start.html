@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./start.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="playerOne">
+
+        </div>
+        <div class="playerTwo">
+
+        </div>
+        <div id="bg">
+            <div>
+                <h3>Game</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, perspiciatis!</li>
+
+                </ul>
+            </div>
+            <div class="in">
+                <h2>Please select a target score</h2>
+                <input type="text" id="startGame">
+                <button class="Start">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const st = document.querySelector(".Start");
+        const startGame = document.querySelector("#startGame");
+
+        st.addEventListener('click',()=>{
+            sessionStorage.setItem("st",startGame.value);
+            document.location.href="./index.html"
+        });
+    </script>
+</body>
+
+</html>
